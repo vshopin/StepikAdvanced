@@ -9,5 +9,5 @@
 input_str = input().split()
 res = {}
 for i in input_str:
-    res[i] = res.get(i, -1) + 1
+    res[i] = res.get(i, -1) + 1 # вернет -1 если ключа нет в словаре, и прибавит 1, после положит слово и число в словарь
     print(i, end=' ') if res[i] == 0 else print(f'{i}_{res[i]}', end=' ')
